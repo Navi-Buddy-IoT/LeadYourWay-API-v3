@@ -24,10 +24,10 @@ import com.lyw.api.app.shared.constants.HeaderConstants;
 
 import static com.lyw.api.app.shared.constants.ConfigurationMessages.USER_CREATED;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/leadyourway/v1/users")
 @Tag(name = "User Controller")
-@CrossOrigin
 public class UserController {
     private final UserCommandService userCommandService;
     private final UserQueryService userQueryService;

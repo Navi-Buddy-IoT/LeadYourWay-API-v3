@@ -25,10 +25,10 @@ import com.lyw.api.app.core.rent.infrastructure.mapper.RentMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/leadyourway/v1/rents")
 @Tag(name = "Rent Controller", description = "Rent API")
-@CrossOrigin
 public class RentController {
 
     private final RentCommandService rentCommandService;
